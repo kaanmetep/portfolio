@@ -8,7 +8,7 @@ import { FRONTEND_STACK, BACKEND_STACK, SERVICES_STACK } from "@/constants";
 
 const AboutSection = () => {
   return (
-    <div className="border-r border-gray-200 p-10 w-[40%] relative ">
+    <div className="border-r border-gray-200 p-10 lg:w-[40%] relative ">
       <FaRegMoon className="absolute top-6 right-6 cursor-pointer" />
       <FaRegSun className="absolute top-6 right-6 hidden cursor-pointer" />
       <h1 className="text-5xl font-semibold">kaan peksen</h1>

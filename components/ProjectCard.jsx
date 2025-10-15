@@ -1,3 +1,4 @@
+"use client";
 import Button from "./ui/Button";
 import { FiGithub } from "react-icons/fi";
 import { Globe } from "lucide-react";
@@ -5,12 +6,17 @@ const ProjectCard = ({
   logo,
   title,
   description,
-  image,
+  image = null,
   technologies = [],
+  websiteUrl,
+  githubUrl,
 }) => {
   return (
-    <div className="mt-10 border border-gray-200 cursor-pointer hover:shadow-md transition-all duration-200 hover:border-gray-300 ease-in-out rounded-lg p-6">
-      <div className="flex items-center gap-4">
+    <div
+      className="flex flex-col mt-10 border border-gray-200 cursor-pointer hover:shadow-md transition-all duration-200 hover:border-gray-300 ease-in-out rounded-lg p-6"
+      onClick={() => window.open(websiteUrl, "_blank")}
+    >
+      <div className="flex lg:items-center gap-4">
         <div>
           <div className="flex gap-2 items-center">
             <div>{logo}</div>
@@ -30,20 +36,22 @@ const ProjectCard = ({
             ))}
           </ul>
         </div>
-        <img
-          src={image.src}
-          alt={title}
-          className="w-64 h-48 object-contain rounded-lg"
-        />
+        {image && (
+          <img
+            src={image.src}
+            alt={title}
+            className="w-64 h-48 object-contain rounded-lg hidden lg:block"
+          />
+        )}
       </div>
       <ul className="flex gap-2 mt-[18px] items-center">
         <li>
-          <Button>
+          <Button onClick={() => window.open(websiteUrl, "_blank")}>
             <Globe className="size-2 sm:size-3 md:size-4" />
           </Button>
         </li>
         <li>
-          <Button>
+          <Button onClick={() => window.open(githubUrl, "_blank")}>
             <FiGithub className="size-2 sm:size-3 md:size-4" />
           </Button>
         </li>

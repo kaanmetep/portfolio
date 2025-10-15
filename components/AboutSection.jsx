@@ -8,15 +8,12 @@ import { FRONTEND_STACK, BACKEND_STACK, SERVICES_STACK } from "@/constants";
 
 const AboutSection = () => {
   return (
-    <div className="border-r border-gray-200 p-10 w-[40%] relative">
+    <div className="border-r border-gray-200 p-10 w-[40%] relative ">
       <FaRegMoon className="absolute top-6 right-6 cursor-pointer" />
       <FaRegSun className="absolute top-6 right-6 hidden cursor-pointer" />
-      <h1 className="text-5xl font-semibold">
-        kaan p{" "}
-        <div className="w-2 h-2 bg-black -ml-2  inline-block aspect-square"></div>
-      </h1>
+      <h1 className="text-5xl font-semibold">kaan peksen</h1>
       <h2 className="mt-2">Software Engineer</h2>
-      <p className="mt-6">
+      <p className="mt-6 leading-relaxed">
         Hi there! Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Officia nemo magni corporis autem deleniti adipisci voluptatibus vel
         nulla assumenda molestiae alias eius excepturi aliquid minima, impedit
@@ -36,23 +33,23 @@ const AboutSection = () => {
           <FiGithub className="text-lg" />
         </Button>
       </div>
-      <div className="mt-8">
-        <h3 className="text-2xl font-medium">Technologies</h3>
+      <div className="mt-8 text-gray-700 text-sm">
+        <h3 className="text-2xl ">Technologies</h3>
         <div className="flex gap-2  mt-4">
           <p>
-            <span className="font-semibold">Frontend:</span>{" "}
+            <span className="text-gray-900 font-semibold">Frontend:</span>{" "}
             {FRONTEND_STACK.join(", ")}
           </p>
         </div>
         <div className="flex gap-2  mt-4">
           <p>
-            <span className="font-semibold">Backend:</span>{" "}
+            <span className="text-gray-900 font-semibold">Backend:</span>{" "}
             {BACKEND_STACK.join(", ")}
           </p>
         </div>
         <div className="flex gap-2  mt-4">
           <p>
-            <span className="font-semibold">Backend:</span>{" "}
+            <span className="text-gray-900 font-semibold">Backend:</span>{" "}
             {SERVICES_STACK.join(", ")}
           </p>
         </div>

@@ -13,19 +13,19 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className="flex flex-col mt-10 border border-gray-200 cursor-pointer hover:shadow-md transition-all duration-200 hover:border-gray-300 ease-in-out rounded-lg p-6"
+      className="flex flex-col  border border-gray-200 cursor-pointer hover:shadow-md transition-all duration-200 hover:border-gray-300 ease-in-out rounded-lg p-4 lg:p-6"
       onClick={() => window.open(websiteUrl, "_blank")}
     >
       <div className="flex lg:items-center gap-4">
         <div>
           <div className="flex gap-2 items-center">
             <div>{logo}</div>
-            <p className="font-semibold text-lg">{title}</p>
+            <p className="font-semibold text-base lg:text-lg">{title}</p>
           </div>
-          <p className="mt-4 leading-relaxed text-gray-500 text-[15px]">
+          <p className="mt-4 leading-relaxed text-gray-500 text-sm lg:text-[15px]">
             {description}
           </p>
-          <ul className="flex gap-2 mt-4 text-gray-600 text-xs">
+          <ul className="flex gap-2 mt-4 text-gray-600 text-[10px] lg:text-xs">
             {technologies?.map((technology) => (
               <li
                 key={technology}
@@ -47,12 +47,12 @@ const ProjectCard = ({
       <ul className="flex gap-2 mt-[18px] items-center">
         <li>
           <Button onClick={() => window.open(websiteUrl, "_blank")}>
-            <Globe className="size-2 sm:size-3 md:size-4" />
+            <Globe className="size-3 md:size-4" />
           </Button>
         </li>
         <li>
           <Button onClick={() => window.open(githubUrl, "_blank")}>
-            <FiGithub className="size-2 sm:size-3 md:size-4" />
+            <FiGithub className="size-3 md:size-4" />
           </Button>
         </li>
       </ul>

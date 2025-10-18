@@ -59,14 +59,27 @@ const AboutSection = () => {
         aliquid esse laboriosam facilis, provident facere.
       </p>
       <div className="flex gap-4 lg:mt-8 mt-6">
-        <Button dark>Resume</Button>
-        <Button>
+        <Button
+          dark
+          onClick={() => window.open("/KaanPeksenResume25.pdf", "_blank")}
+        >
+          Resume
+        </Button>
+        <Button
+          onClick={() => (window.location.href = "mailto:kaanmetep@gmail.com")}
+        >
           <CiMail className="text-lg" />
         </Button>
-        <Button>
+        <Button
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/kaanmetep/", "_blank")
+          }
+        >
           <FaLinkedinIn className="text-lg" />
         </Button>
-        <Button>
+        <Button
+          onClick={() => window.open("https://github.com/kaanmetep", "_blank")}
+        >
           <FiGithub className="text-lg" />
         </Button>
       </div>

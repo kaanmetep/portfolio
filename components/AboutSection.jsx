@@ -17,7 +17,7 @@ import { FRONTEND_STACK, BACKEND_STACK, SERVICES_STACK } from "@/constants";
 const AboutSection = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className="border-r border-r-gray-200 dark:border-r-gray-700 p-10 lg:w-[40%] relative lg:hover:shadow-lg  transition-all duration-150 overflow-y-scroll">
+    <div className="border-r border-r-gray-200 dark:border-r-gray-700 lg:p-10 p-6 lg:w-[40%] relative lg:hover:shadow-lg  transition-all duration-150 overflow-y-scroll">
       {theme === "light" && (
         <div className="absolute top-6 right-6 group">
           <FaRegMoon

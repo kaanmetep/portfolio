@@ -25,7 +25,7 @@ const ContentSection = () => {
         isLargeScreen ? "force-scrollbar" : ""
       }`}
     >
-      <ul className="flex gap-6 mb-6 lg:mb-10">
+      <ul className="flex gap-6 mb-6 mt-5 lg:mt-0 lg:mb-10">
         <li>
           <Tab
             selected={activeTab === "projects"}

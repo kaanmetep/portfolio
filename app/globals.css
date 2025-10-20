@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Force scrollbar to always be visible */
 .force-scrollbar {
   overflow-y: scroll !important;

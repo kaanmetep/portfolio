@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Button from "./ui/Button";
 import {
   FaRegMoon,
@@ -10,17 +10,15 @@ import {
 } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
+import { useTheme } from "@/components/ThemeProvider";
 
 import { FRONTEND_STACK, BACKEND_STACK, SERVICES_STACK } from "@/constants";
 
 const AboutSection = () => {
-  const [theme, setTheme] = useState("dark");
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+  const { theme, toggleTheme } = useTheme();
   return (
-    <div className="border-r border-r-gray-200 p-10 lg:w-[40%] relative lg:hover:shadow-lg  transition-all duration-150 overflow-y-scroll">
-      {theme === "dark" && (
+    <div className="border-r border-r-gray-200 dark:border-r-gray-700 p-10 lg:w-[40%] relative lg:hover:shadow-lg  transition-all duration-150 overflow-y-scroll">
+      {theme === "light" && (
         <div className="absolute top-6 right-6 group">
           <FaRegMoon
             className=" cursor-pointer group-hover:hidden "
@@ -32,7 +30,7 @@ const AboutSection = () => {
           />
         </div>
       )}
-      {theme === "light" && (
+      {theme === "dark" && (
         <div className="absolute top-6 right-6 group">
           <FaRegSun
             className=" cursor-pointer group-hover:hidden "
@@ -83,23 +81,29 @@ const AboutSection = () => {
           <FiGithub className="text-lg" />
         </Button>
       </div>
-      <div className="lg:mt-8 mt-6 text-gray-700 text-sm">
+      <div className="lg:mt-8 mt-6 text-gray-700 dark:text-gray-300 text-sm">
         <h3 className="text-2xl ">Technologies</h3>
         <div className="flex gap-2  lg:mt-4 mt-2">
           <p>
-            <span className="text-gray-900 font-semibold">Frontend:</span>{" "}
+            <span className="text-gray-900 dark:text-gray-300 font-semibold">
+              Frontend:
+            </span>{" "}
             {FRONTEND_STACK.join(", ")}
           </p>
         </div>
         <div className="flex gap-2  lg:mt-4 mt-2">
           <p>
-            <span className="text-gray-900 font-semibold">Backend:</span>{" "}
+            <span className="text-gray-900 dark:text-gray-300 font-semibold">
+              Backend:
+            </span>{" "}
             {BACKEND_STACK.join(", ")}
           </p>
         </div>
         <div className="flex gap-2  lg:mt-4 mt-2">
           <p>
-            <span className="text-gray-900 font-semibold">Backend:</span>{" "}
+            <span className="text-gray-900 dark:text-gray-300 font-semibold">
+              Services:
+            </span>{" "}
             {SERVICES_STACK.join(", ")}
           </p>
         </div>

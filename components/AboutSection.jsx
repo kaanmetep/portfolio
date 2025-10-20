@@ -64,7 +64,12 @@ const AboutSection = () => {
           Resume
         </Button>
         <Button
-          onClick={() => (window.location.href = "mailto:kaanmetep@gmail.com")}
+          onClick={() =>
+            window.open(
+              "https://mail.google.com/mail/?view=cm&fs=1&to=kaanpmete@gmail.com",
+              "_blank"
+            )
+          }
         >
           <CiMail className="text-lg" />
         </Button>

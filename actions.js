@@ -74,10 +74,24 @@ export async function sendEmail(_, formData) {
       message: "Message sent successfully!",
     };
   } catch (error) {
-    console.error("Error sending message:", error);
+    if (error.errors && error.errors.length > 0) {
+      const firstError = error.errors[0];
+      const fieldName = firstError.path[0];
+
+
+      const { [fieldName]: _, ...inputsWithoutErrorField } = rawData;
+
+      return {
+        success: false,
+        message: firstError.message,
+        inputs: inputsWithoutErrorField,
+      };
+    }
+
     return {
       success: false,
-      error: "Failed to send message. Please try again later.",
+      message: "Unexpected error happened.",
+      inputs: rawData,
     };
   }
 }

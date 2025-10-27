@@ -17,7 +17,7 @@ const ProjectCard = ({
       onClick={() => window.open(websiteUrl, "_blank")}
     >
       <div className="flex lg:items-center gap-4">
-        <div>
+        <div className="flex-1">
           <div className="flex gap-2 items-center">
             <div>{logo}</div>
             <p className="font-semibold text-base lg:text-lg">{title}</p>
@@ -40,7 +40,7 @@ const ProjectCard = ({
           <img
             src={image.src}
             alt={title}
-            className="w-64 h-48 object-contain rounded-lg hidden lg:block"
+            className="w-64 h-48 object-contain rounded-lg hidden lg:block flex-1"
           />
         )}
       </div>

@@ -20,7 +20,7 @@ const Projects = () => {
           <Rocket className=" fill-yellow-200 size-4 sm:size-5 md:size-7" />
         }
         title="GoViralFast"
-        description="GoViralFast is a SaaS where users can edit viral videos directly on the platform and download them instantly."
+        description="GoViralFast is a SaaS where users can edit viral videos directly on the platform and download them instantly. Users can purchase a monthly subscription for a set fee. All payment transactions are securely processed through Stripe"
         image={image1}
         technologies={["NextJS", "Supabase", "Stripe", "TailwindCSS"]}
         websiteUrl="https://goviralfast.co"

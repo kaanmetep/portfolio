@@ -46,10 +46,10 @@ const AboutSection = () => {
         kaan peksen
       </h1>
       <h2 className="lg:mt-2 mt-1 text-sm md:text-base lg:text-lg ">
-        Software Engineer
+        Computer Engineer
       </h2>
       <p className="lg:mt-6 mt-4 leading-relaxed text-sm md:text-[15px] lg:text-base 2xl:text-[17px]">
-      Hi! I'm Kaan. I enjoy being involved in every step of creating a product, from the first idea to the final result. I like exploring all sides of technology rather than sticking to just front-end or back-end, because each part excites me and I enjoy having a hand in every aspect of a product. For me, programming is more of a hobby than a job (it really is).
+      Hi! I'm Kaan. I love building things. I enjoy being part of every step of creating a product. For me, building something is much more than just coding - it's about bringing ideas to life. I also love exploring what’s going on under the hood of modern technology, which is why I like learning about all sides of it instead of sticking to just front-end or back-end. Programming feels more like a hobby than a job (it really does).
       </p>
       <div className="flex gap-4 lg:mt-8 mt-6">
         <Button

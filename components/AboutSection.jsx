@@ -81,7 +81,7 @@ const AboutSection = () => {
           <FiGithub className="lg:text-lg text-sm" />
         </Button>
       </div>
-      <div className="lg:mt-6 mt-4 text-gray-700 dark:text-gray-300 lg:text-sm 2xl:text-base text-xs">
+      <div className="lg:mt-6 mt-4 text-gray-700 dark:text-gray-300 text-sm 2xl:text-base ">
         <h3 className="lg:text-2xl text-xl ">Technologies</h3>
         <div className="flex gap-2  lg:mt-4 mt-2">
           <p>

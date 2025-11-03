@@ -17,7 +17,7 @@ import { FRONTEND_STACK, BACKEND_STACK, SERVICES_STACK } from "@/constants";
 const AboutSection = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className="border-r border-r-gray-200 dark:border-r-gray-700 lg:p-10 p-6 lg:w-[40%] relative lg:hover:shadow-lg  transition-all duration-150">
+    <div className="border-r border-r-gray-200 dark:border-r-gray-700 lg:p-10 p-6 lg:w-[40%] relative lg:hover:shadow-lg  transition-all duration-150 flex flex-col">
       {theme === "light" && (
         <div className="absolute top-6 right-6 group">
           <FaRegMoon
@@ -49,7 +49,13 @@ const AboutSection = () => {
         Computer Engineer
       </h2>
       <p className="lg:mt-6 mt-4 leading-relaxed text-sm md:text-[15px] lg:text-base 2xl:text-[17px]">
-      Hi! I'm Kaan. I love building things. I enjoy being part of every step of creating a product. For me, building something is much more than just coding - it's about bringing ideas to life. I also love exploring what’s going on under the hood of modern technology, which is why I like learning about all sides of it instead of sticking to just front-end or back-end. Programming feels more like a hobby than a job (it really does).
+        Hi! I'm Kaan. I love building things. I enjoy being part of every step
+        of creating a product. For me, building something is much more than just
+        coding - it's about bringing ideas to life. I also love exploring what’s
+        going on under the hood of modern technology, which is why I like
+        learning about all sides of it instead of sticking to just front-end or
+        back-end. Programming feels more like a hobby than a job (it really
+        does).
       </p>
       <div className="flex gap-4 lg:mt-8 mt-6">
         <Button

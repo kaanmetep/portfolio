@@ -1,8 +1,11 @@
 import ProjectCard from "./ProjectCard";
 import { Rocket, Shell, MessageCircle } from "lucide-react";
+import Image from "next/image";
 import image1 from "@/public/images/goviralfast/goviralfast1.png";
 import image2 from "@/public/images/deepintodev/deepintodev1.png";
 import image3 from "@/public/images/quizversus/quizversus1.png";
+import image4 from "@/public/images/knowusbetter/knowusbetter-logo.png";
+import image5 from "@/public/images/knowusbetter/knowusbetter1.jpeg";
 const Projects = () => {
   return (
     <div className="flex flex-col gap-8">
@@ -34,6 +37,16 @@ const Projects = () => {
         technologies={["NextJS", "Socket.IO"]}
         websiteUrl="https://quiz-versus.onrender.com/"
         githubUrl="https://github.com/kaanmetep/quiz-versus"
+      />
+      <ProjectCard
+        logo={<Image src={image4} alt="KnowUsBetter" width={36} height={36} />}
+        title="KnowUsBetter"
+        description="KnowUsBetter is a mobile game app for couples and friends who want to get to know each other better. Couples can test their connection by playing real-time challenges together - each from their own device. To create certain types of rooms, users need to purchase in-game coins."
+        image={image5}
+        technologies={["React Native", "NodeJS", "MongoDB"]}
+        websiteUrl="http://knowusbetter.app/"
+        githubUrl="https://github.com/kaanmetep/KnowUsBetterApp"
+        building={true}
       />
     </div>
   );

@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <div className="text-gray-700 dark:text-gray-300 lg:text-base text-sm">
       <div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
           <p>My personal email:</p>
           <Button
             onClick={() =>

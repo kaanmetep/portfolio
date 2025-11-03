@@ -4,6 +4,7 @@ export const FRONTEND_STACK = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React Native",
   "NextJS",
   "TailwindCSS",
 ];

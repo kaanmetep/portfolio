@@ -9,7 +9,7 @@ const Projects = () => {
       <ProjectCard
         logo={<Shell className="size-4 sm:size-5 md:size-7" />}
         title="DeepIntoDev"
-        description="In the world of software development, filled with frameworks and abstractions, I often felt like I was just using technologies without truly understanding them. So, I started digging deeper, and researching. That’s why I created DeepIntoDev: to break down complex programming concepts into easy-to-understand explanations."
+        description="In the world of software development, filled with frameworks and abstractions, I often felt like I was just using technologies without truly understanding them. So, I started digging deeper, and researching. That’s why I created DeepIntoDev: to break down complex programming concepts into easy-to-understand explanations. DeepIntoDev has reached over +100,000 views worldwide, and more than +700 developers around the globe have subscribed to its newsletter."
         image={image2}
         technologies={["NextJS", "Redis", "MongoDB"]}
         websiteUrl="https://deepintodev.com"

@@ -10,6 +10,22 @@ const Projects = () => {
   return (
     <div className="flex flex-col gap-8">
       <ProjectCard
+        logo={<Image src={image4} alt="KnowUsBetter" width={36} height={36} />}
+        title="KnowUsBetter"
+        description="KnowUsBetter is a mobile game app for couples and friends who want to get to know each other better. Couples can test their connection by playing real-time challenges together - each from their own device. To create certain types of rooms, users need to purchase in-game coins. The app supports 3 languages: English, Turkish, and Spanish."
+        image={image5}
+        technologies={[
+          "React Native",
+          "Socket.IO",
+          "NodeJS",
+          "MongoDB",
+          "TypeScript",
+        ]}
+        websiteUrl="http://knowusbetter.app/"
+        githubUrl="https://github.com/kaanmetep/KnowUsBetterApp"
+        building={true}
+      />
+      <ProjectCard
         logo={<Shell className="size-4 sm:size-5 md:size-7" />}
         title="DeepIntoDev"
         description="In the world of software development, filled with frameworks and abstractions, I often felt like I was just using technologies without truly understanding them. So, I started digging deeper, and researching. That’s why I created DeepIntoDev: to break down complex programming concepts into easy-to-understand explanations. DeepIntoDev has reached over +100,000 views worldwide, and more than +700 developers around the globe have subscribed to its newsletter."
@@ -37,16 +53,6 @@ const Projects = () => {
         technologies={["NextJS", "Socket.IO"]}
         websiteUrl="https://quiz-versus.onrender.com/"
         githubUrl="https://github.com/kaanmetep/quiz-versus"
-      />
-      <ProjectCard
-        logo={<Image src={image4} alt="KnowUsBetter" width={36} height={36} />}
-        title="KnowUsBetter"
-        description="KnowUsBetter is a mobile game app for couples and friends who want to get to know each other better. Couples can test their connection by playing real-time challenges together - each from their own device. To create certain types of rooms, users need to purchase in-game coins."
-        image={image5}
-        technologies={["React Native", "NodeJS", "MongoDB"]}
-        websiteUrl="http://knowusbetter.app/"
-        githubUrl="https://github.com/kaanmetep/KnowUsBetterApp"
-        building={true}
       />
     </div>
   );

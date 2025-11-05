@@ -18,7 +18,7 @@ const ProjectCard = ({
       onClick={() => window.open(websiteUrl, "_blank")}
     >
       {building && (
-        <div className="absolute -top-3 -left-4 lg:-left-6 bg-gray-100 text-gray-900 px-2 py-1 rounded-md shadow-lg border border-gray-200 dark:border-gray-700">
+        <div className="absolute -top-3 -left-4 lg:-left-6 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 rounded-md shadow-lg border border-gray-200 dark:border-gray-700">
           <p className="text-[9px] lg:text-xs">Currently Building</p>
         </div>
       )}
@@ -46,7 +46,7 @@ const ProjectCard = ({
           <img
             src={image.src}
             alt={title}
-            className="w-64 h-48 object-contain rounded-lg hidden lg:block flex-1"
+            className="w-96 h-72 object-contain rounded-lg hidden lg:block "
           />
         )}
       </div>

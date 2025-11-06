@@ -31,7 +31,7 @@ const ProjectCard = ({
           <p className="mt-4 leading-relaxed text-gray-500 dark:text-gray-300 text-sm lg:text-[15px]">
             {description}
           </p>
-          <ul className="flex gap-2 mt-4 text-gray-600 dark:text-gray-300 text-[10px] lg:text-xs">
+          <ul className="flex flex-wrap gap-2 mt-4 text-gray-600 dark:text-gray-300 text-[10px] lg:text-xs">
             {technologies?.map((technology) => (
               <li
                 key={technology}

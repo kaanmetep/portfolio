@@ -46,7 +46,7 @@ const ProjectCard = ({
           <img
             src={image.src}
             alt={title}
-            className="w-96 h-72 object-contain rounded-lg hidden lg:block "
+            className="w-96 h-72 object-contain rounded-lg hidden 2xl:block "
           />
         )}
       </div>

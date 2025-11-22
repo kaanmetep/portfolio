@@ -3,9 +3,10 @@ import { Rocket, Shell, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import image1 from "@/public/images/goviralfast/goviralfast1.png";
 import image2 from "@/public/images/deepintodev/deepintodev1.png";
-import image3 from "@/public/images/quizversus/quizversus1.png";
 import image4 from "@/public/images/knowusbetter/knowusbetter-logo.png";
 import image5 from "@/public/images/knowusbetter/knowusbetter1.png";
+import image6 from "@/public/images/starkecommerce/stark.png";
+import image7 from "@/public/images/starkecommerce/starkminilogo.png";
 const Projects = () => {
   return (
     <div className="flex flex-col gap-8">
@@ -48,13 +49,21 @@ const Projects = () => {
         githubUrl="https://github.com/kaanmetep/goviralfast"
       />
       <ProjectCard
-        logo={<MessageCircle className="size-4 sm:size-5 md:size-7" />}
-        title="QuizVersus"
-        description="QuizVersus is a real-time multiplayer quiz app built using Socket.IO. Users can create and join quiz rooms, compete against each other in real-time, and view live scores."
-        image={image3}
-        technologies={["NextJS", "Socket.IO"]}
-        websiteUrl="https://quiz-versus.onrender.com/"
-        githubUrl="https://github.com/kaanmetep/quiz-versus"
+        logo={
+          <Image src={image7} alt="Stark E-commerce" width={36} height={36} />
+        }
+        title="Stark E-commerce"
+        description="This project is an e-commerce website where users can browse products, add items to their cart, and complete purchases. Admin users can also add products with images and view orders on their panel. This is an older portfolio project I built at the time to strengthen my knowledge of the MERN stack and improve my full-stack development skills."
+        image={image6}
+        technologies={[
+          "ReactJS",
+          "TailwindCSS",
+          "Express",
+          "MongoDB",
+          "NodeJS",
+        ]}
+        websiteUrl="https://stark-ecommerce-front.vercel.app/"
+        githubUrl="https://github.com/kaanmetep/stark-ecommerce"
       />
     </div>
   );

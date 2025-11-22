@@ -42,13 +42,13 @@ const AboutSection = () => {
           />
         </div>
       )}
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold dark:text-gray-200">
         kaan peksen
       </h1>
-      <h2 className="lg:mt-2 mt-1 text-sm md:text-base lg:text-lg ">
+      <h2 className="lg:mt-2 mt-1 text-sm md:base lg:text-lg dark:text-gray-300">
         Computer Engineer
       </h2>
-      <p className="lg:mt-6 mt-4 leading-relaxed text-sm md:text-[15px] lg:text-base 2xl:text-[17px]">
+      <p className="lg:mt-6 mt-4 leading-relaxed text-sm md:text-[15px] lg:text-base 2xl:text-[17px] dark:text-gray-300">
         Hi! I'm Kaan. I love building things. I enjoy being involved in every
         stage of the product development process. I also love exploring what’s
         going on under the hood of modern technology, which is why I like

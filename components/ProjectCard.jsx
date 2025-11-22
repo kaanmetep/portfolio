@@ -47,13 +47,11 @@ const ProjectCard = ({
           </ul>
         </div>
         {image && (
-          <div className="w-96 h-72 dark:bg-gray-900 rounded-lg overflow-hidden hidden 2xl:flex items-center justify-center">
-            <img
-              src={image.src}
-              alt={title}
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <img
+            src={image.src}
+            alt={title}
+            className="w-96 h-72 object-contain hidden 2xl:block"
+          />
         )}
       </div>
       <ul className="flex gap-2 mt-[18px] items-center">

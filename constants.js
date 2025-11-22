@@ -23,6 +23,8 @@ export const SERVICES_STACK = [
   "SocketIO",
   "Supabase",
   "Stripe",
+  "RevenueCat",
+  "Expo",
   "Prisma ORM",
   "Postman",
 ];

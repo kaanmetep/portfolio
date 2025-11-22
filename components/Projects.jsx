@@ -5,7 +5,7 @@ import image1 from "@/public/images/goviralfast/goviralfast1.png";
 import image2 from "@/public/images/deepintodev/deepintodev1.png";
 import image3 from "@/public/images/quizversus/quizversus1.png";
 import image4 from "@/public/images/knowusbetter/knowusbetter-logo.png";
-import image5 from "@/public/images/knowusbetter/knowusbetter1.jpeg";
+import image5 from "@/public/images/knowusbetter/knowusbetter1.png";
 const Projects = () => {
   return (
     <div className="flex flex-col gap-8">
@@ -16,14 +16,16 @@ const Projects = () => {
         image={image5}
         technologies={[
           "React Native",
+          "TypeScript",
           "Socket.IO",
           "NodeJS",
-          "MongoDB",
-          "TypeScript",
+          "PostgreSQL",
+          "RevenueCat",
+          "Expo",
         ]}
         websiteUrl="http://knowusbetter.app/"
         githubUrl="https://github.com/kaanmetep/KnowUsBetterApp"
-        building={true}
+        appStoreUrl="https://apps.apple.com/us/app/knowusbetter/id6754946265"
       />
       <ProjectCard
         logo={<Shell className="size-4 sm:size-5 md:size-7" />}

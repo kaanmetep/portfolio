@@ -49,9 +49,8 @@ const AboutSection = () => {
         Computer Engineer
       </h2>
       <p className="lg:mt-6 mt-4 leading-relaxed text-sm md:text-[15px] lg:text-base 2xl:text-[17px]">
-        Hi! I'm Kaan. I love building things. I enjoy being part of every step
-        of creating a product. For me, building something is much more than just
-        coding - it's about bringing ideas to life. I also love exploring what’s
+        Hi! I'm Kaan. I love building things. I enjoy being involved in every
+        stage of the product development process. I also love exploring what’s
         going on under the hood of modern technology, which is why I like
         learning about all sides of it instead of sticking to just front-end or
         back-end. Programming feels more like a hobby than a job (it really

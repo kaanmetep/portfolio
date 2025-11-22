@@ -1,6 +1,7 @@
 "use client";
 import Button from "./ui/Button";
 import { FiGithub } from "react-icons/fi";
+import { SiAppstore } from "react-icons/si";
 import { Globe } from "lucide-react";
 const ProjectCard = ({
   logo,
@@ -10,12 +11,15 @@ const ProjectCard = ({
   technologies = [],
   websiteUrl,
   githubUrl,
+  appStoreUrl,
   building = false,
 }) => {
   return (
     <div
       className="relative flex flex-col  border border-gray-200 dark:border-gray-700 cursor-pointer hover:shadow-md transition-all duration-200 hover:border-gray-300 ease-in-out rounded-lg p-4 lg:p-6"
-      onClick={() => window.open(websiteUrl, "_blank")}
+      onClick={() =>
+        window.open(appStoreUrl ? appStoreUrl : websiteUrl, "_blank")
+      }
     >
       {building && (
         <div className="absolute -top-3 -left-4 lg:-left-6 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-2 py-1 rounded-md shadow-lg border border-gray-200 dark:border-gray-700">
@@ -43,14 +47,23 @@ const ProjectCard = ({
           </ul>
         </div>
         {image && (
-          <img
-            src={image.src}
-            alt={title}
-            className="w-96 h-72 object-contain rounded-lg hidden 2xl:block "
-          />
+          <div className="w-96 h-72 dark:bg-gray-900 rounded-lg overflow-hidden hidden 2xl:flex items-center justify-center">
+            <img
+              src={image.src}
+              alt={title}
+              className="w-full h-full object-contain"
+            />
+          </div>
         )}
       </div>
       <ul className="flex gap-2 mt-[18px] items-center">
+        {appStoreUrl && (
+          <li>
+            <Button onClick={() => window.open(appStoreUrl, "_blank")}>
+              <SiAppstore className="size-3 md:size-4" />
+            </Button>
+          </li>
+        )}
         <li>
           <Button onClick={() => window.open(websiteUrl, "_blank")}>
             <Globe className="size-3 md:size-4" />

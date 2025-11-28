@@ -58,12 +58,6 @@ const AboutSection = () => {
       </p>
       <div className="flex gap-4 lg:mt-8 mt-6">
         <Button
-          dark
-          onClick={() => window.open("/KaanPeksenResume25.pdf", "_blank")}
-        >
-          Resume
-        </Button>
-        <Button
           onClick={() =>
             window.open(
               "https://mail.google.com/mail/?view=cm&fs=1&to=kaanpmete@gmail.com",
